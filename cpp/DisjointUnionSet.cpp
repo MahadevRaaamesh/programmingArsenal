@@ -20,7 +20,7 @@ class DSU{
             if(u==parent[u]){
                 return u;
             }else{
-                return find(parent[u]);
+                return parent[u]=find(parent[u]);
             }
         }
         void join(int u,int v)
